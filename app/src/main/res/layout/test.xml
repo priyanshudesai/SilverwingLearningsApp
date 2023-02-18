@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="@dimen/_35sdp"
+        android:id="@+id/imageprofiledetails"
+
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/profile_firstname" />
+    <TextView
+        android:id="@+id/profiledetailstextname"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_height="wrap_content"
+        android:text="Kaushik"
+        android:textColor="@color/colorPrimary"
+        android:layout_toRightOf="@id/imageprofiledetails"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_toRightOf="@id/imageprofiledetails"/>
+</RelativeLayout>
+</LinearLayout>

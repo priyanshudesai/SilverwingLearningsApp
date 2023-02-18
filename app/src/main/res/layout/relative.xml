@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp">
+        <ImageView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/photo"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/icon_person_"
+            android:layout_marginLeft="@dimen/_10sdp"
+            />
+        <EditText
+            android:id="@+id/name"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/photo"
+            android:hint="@string/name"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/photo" />
+
+        <ImageView
+            android:id="@+id/phoneicon"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/photo"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:src="@drawable/icon_local_phone"
+            android:layout_alignStart="@+id/photo"
+            android:layout_alignLeft="@+id/photo" />
+        <EditText
+            android:id="@+id/phone"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toEndOf="@+id/phoneicon"
+            android:hint="@string/phone_no"
+            android:inputType="phone"
+            android:layout_alignStart="@+id/name"
+            android:layout_alignBottom="@+id/phoneicon"
+            android:layout_toRightOf="@+id/phoneicon"
+            android:layout_alignLeft="@+id/name" />
+        <Spinner
+            android:id="@+id/phonespinner"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toEndOf="@+id/phone"
+            android:layout_alignBottom="@+id/phone"
+            android:entries="@array/phonetype"
+
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_toRightOf="@+id/phone" />
+        <ImageView
+            android:id="@+id/mailicon"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/phoneicon"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:src="@drawable/icon_mail"
+            android:layout_alignStart="@+id/phoneicon"
+            android:layout_alignLeft="@+id/phoneicon" />
+        <EditText
+            android:id="@+id/mail"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone"
+            android:layout_toEndOf="@+id/mailicon"
+            android:hint="@string/email"
+            android:layout_alignStart="@+id/phone"
+            android:layout_alignBottom="@+id/mailicon"
+            android:inputType="textEmailAddress"
+            android:layout_toRightOf="@+id/mailicon"
+            android:layout_alignLeft="@+id/phone" />
+        <Spinner
+            android:id="@+id/mailspinner"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phonespinner"
+            android:layout_toEndOf="@+id/mail"
+            android:layout_alignBottom="@+id/mail"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:entries="@array/emailtype"
+            android:layout_toRightOf="@+id/mail" />
+        <ImageView
+            android:id="@+id/addicon"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/mailicon"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:src="@drawable/icon_location"
+            android:layout_alignStart="@+id/mailicon"
+            android:layout_alignLeft="@+id/mailicon" />
+        <EditText
+            android:id="@+id/add"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mail"
+            android:layout_toEndOf="@+id/addicon"
+            android:hint="@string/address"
+            android:layout_alignStart="@+id/mail"
+            android:layout_alignLeft="@+id/mail"
+            android:layout_toRightOf="@+id/addicon" />
+        <ImageView
+            android:id="@+id/cmpicon"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/addicon"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:src="@drawable/icon_flat"
+            android:layout_alignStart="@+id/addicon"
+            android:layout_alignLeft="@+id/addicon" />
+        <EditText
+            android:id="@+id/cmp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add"
+            android:layout_toEndOf="@+id/cmpicon"
+            android:layout_alignBottom="@+id/cmpicon"
+            android:layout_alignStart="@+id/add"
+            android:hint="@string/company"
+            android:layout_alignLeft="@+id/add"
+            android:layout_toRightOf="@+id/cmpicon" />
+        <EditText
+            android:id="@+id/title"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cmp"
+            android:layout_toEndOf="@+id/cmpicon"
+            android:hint="@string/title"
+            android:layout_alignStart="@+id/cmp"
+            android:layout_toRightOf="@+id/cmpicon"
+            android:layout_alignLeft="@+id/cmp" />
+        <ImageView
+            android:id="@+id/websiteicon"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:src="@drawable/icon_earth"
+            android:layout_alignStart="@+id/cmpicon"
+            android:layout_alignLeft="@+id/cmpicon" />
+        <EditText
+            android:id="@+id/website"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_toEndOf="@+id/websiteicon"
+            android:layout_alignBottom="@+id/websiteicon"
+            android:hint="@string/website"
+            android:layout_alignStart="@+id/title"
+            android:layout_toRightOf="@+id/websiteicon"
+            android:layout_alignLeft="@+id/title" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/websiteicon"
+            android:text="@string/submit"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/capsual_button"/>
+    </RelativeLayout>
+</ScrollView>

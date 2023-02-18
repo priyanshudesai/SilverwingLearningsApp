@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/db_list_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Full Name"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/db_list_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technical"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/db_list_sal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INR 40000"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/db_list_joindate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textSize="18sp"
+            android:text="2019-10-30 00:00:00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="3">
+
+        <Button
+            android:id="@+id/db_list_edit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Edit" />
+
+        <Button
+            android:id="@+id/db_list_dlt_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Delete" />
+
+    </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>

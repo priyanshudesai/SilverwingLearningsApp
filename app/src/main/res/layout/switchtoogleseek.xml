@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Switch
+        android:id="@+id/sts_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textSize="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_15sdp"/>
+<TextView
+    android:id="@+id/sts_textview_s"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/switch_status"
+    android:textSize="@dimen/_20sdp"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/_15sdp"/>
+    <ToggleButton
+        android:id="@+id/sts_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_50sdp"/>
+    <TextView
+        android:id="@+id/sts_textview_t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/toogle_status"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"/>
+    <SeekBar
+        android:id="@+id/sts_seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"/>
+    <TextView
+        android:id="@+id/sts_textview_se"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seek_status"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+</LinearLayout>

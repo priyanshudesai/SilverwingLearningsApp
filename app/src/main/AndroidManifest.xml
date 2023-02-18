@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/tambs"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.FullScreen">
+        <activity android:name=".Firebase.list_layout_firebaseActivity"/>
+        <activity android:name=".gmailapi.gmail_apiActivity"/>
+        <activity android:name=".Firebase.firebaseActivity">
+        </activity>
+        <activity android:name=".Database.emp_list_Activity" />
+        <activity android:name=".Database.EmpActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".map"
+            android:label="@string/title_activity_map" />
+        <activity android:name=".listview.listintentActivity" />
+        <activity android:name=".listview.ListViewActivity" />
+        <activity android:name=".tablayout.tab_Activity" />
+        <activity
+            android:name=".NavigationDrawer.login_nav_Activity"
+            android:theme="@style/AppTheme.FullScreen.NoActionBar" />
+        <activity
+            android:name=".NavigationDrawer.navigation_Activity"
+            android:label="@string/title_activity_navigation_"
+            android:theme="@style/AppTheme.FullScreen.NoActionBar" />
+        <activity android:name=".fragment.fragment_Activity" />
+        <activity android:name=".datetimepicker.datetimepicker_activity" />
+        <activity android:name=".alertdailogbox.alertdbox_activity" />
+        <activity android:name=".sharedpreference.sharedload_activity" />
+        <activity android:name=".sharedpreference.sharedpref_activity" />
+        <activity
+            android:name=".intentshowdata_activity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".intentlogin_activity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".calculator_activity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity android:name=".animation_activity" />
+        <activity android:name=".splashscreen_activty" />
+        <activity android:name=".sts_activity" />
+        <activity android:name=".add2no_activity" />
+        <activity android:name=".login_activity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

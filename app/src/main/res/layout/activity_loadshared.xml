@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/load_n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name">
+    </TextView>
+    <TextView
+        android:id="@+id/load_m"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile no"
+        android:inputType="phone">
+    </TextView>
+    <TextView
+        android:id="@+id/load_e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/load_butload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOAD"
+            android:onClick="load"/>
+        <Button
+            android:id="@+id/load_butpre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PREVIOUS"
+            android:onClick="pre"/>
+    </LinearLayout>
+</LinearLayout>
